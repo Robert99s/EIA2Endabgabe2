@@ -18,6 +18,23 @@ namespace FireworkSimulation {
 
         draw(): void {
             // Hier wird die Rakete noch visuell dargestellt
+            this.drawParticles();
+        }
+
+        drawParticles(): void {
+            this.particles.forEach((particle, index) => {
+                // Male die Partikel nur, wenn sie auch noch leben sollen
+                if (particle.lifetime > 0) {
+                    particle.move();
+                } else {
+                    // entferne den Partikel, wenn er keine Lebenszeit mehr hat
+                    this.particles.splice(index, 1);
+                }
+            });
+
+            if (this.particles.length == 0) {
+                this.lifetime = 0;
+            }
         }
     }
 }

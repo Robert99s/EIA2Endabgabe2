@@ -44,5 +44,11 @@ var FireworkSimulation;
             }
         });
     }
+    //Nächster Schritt
+    /*
+    Funktion Rakete initialisieren
+    Click Event Rakete speichern
+
+    */
 })(FireworkSimulation || (FireworkSimulation = {}));
 //# sourceMappingURL=script.js.map

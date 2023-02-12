@@ -15,7 +15,7 @@ var FireworkSimulation;
         }
         draw() {
             FireworkSimulation.crc2.beginPath();
-            FireworkSimulation.crc2.arc(this.position.x, this.position.y, this.size, 0, 360);
+            FireworkSimulation.crc2.arc(this.position.x, this.position.y, this.size, 0, 2 * Math.PI);
             FireworkSimulation.crc2.strokeStyle = this.color;
             FireworkSimulation.crc2.stroke();
         }
