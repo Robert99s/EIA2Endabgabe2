@@ -1,4 +1,4 @@
-namespace RocketSimulation {
+namespace FireworkSimulation {
     export abstract class Moveable {
         position: Vector;
         velocity: Vector;

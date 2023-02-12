@@ -1,6 +1,6 @@
 "use strict";
-var RocketSimulation;
-(function (RocketSimulation) {
+var FireworkSimulation;
+(function (FireworkSimulation) {
     class Moveable {
         position;
         velocity;
@@ -17,6 +17,6 @@ var RocketSimulation;
             this.lifetime -= _timeslice;
         }
     }
-    RocketSimulation.Moveable = Moveable;
-})(RocketSimulation || (RocketSimulation = {}));
+    FireworkSimulation.Moveable = Moveable;
+})(FireworkSimulation || (FireworkSimulation = {}));
 //# sourceMappingURL=Moveable.js.map
