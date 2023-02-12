@@ -1,3 +1,8 @@
+//Endabgabe EIA2 Feuerwerk
+//Name: Robert Schindler
+//Matrikel: 271342
+//Datum: 12.02.2023
+//Quellen: Henning Pils 269355
 namespace FireworkSimulation {
 
     window.addEventListener("load", async () => {
