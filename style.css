@@ -1,0 +1,36 @@
+body {
+    background-color: #27316e;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+#rocket-builder {
+  float: left;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgb(23, 175, 41);
+  width: 350px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  }
+
+  #canvas {
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  background-color: rgb(254, 255, 254);
+  margin: 0;
+  padding: 0;
+  }
