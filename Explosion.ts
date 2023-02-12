@@ -10,7 +10,7 @@ namespace FireworkSimulation {
             this.particles = [];
             for (let i: number = 0; i < _particleAmount; i++) {
                 // kreieren eine zufällige velocity für jeden Partikel
-                let particleVelocity: Vector = new Vector((Math.random()) * 10, (Math.random()) * 10);
+                let particleVelocity: Vector = new Vector((Math.random()) * 100, (Math.random()) * 100);
                 // kopiere die Partikel-Position, damit jeder partikel eine eigene Position hat.
                 let particlePosition: Vector = _mousePosition.copy();
                 // Hier werden alle Partikel dieser Explosion erstellt und die Lebenszeit zufällig kleiner als die der Rakete gehalten
