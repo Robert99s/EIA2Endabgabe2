@@ -2,7 +2,7 @@
 var FireworkSimulation;
 (function (FireworkSimulation) {
     window.addEventListener("load", async () => {
-        let serverRockets = await handleLoad();
+        let serverRockets = await FireworkSimulation.handleLoad();
         serverRockets.forEach(rocket => {
             // Funktion addRockets erstellen und hier einfügen
         });
@@ -26,7 +26,8 @@ var FireworkSimulation;
         let x = _event.clientX - FireworkSimulation.crc2.canvas.offsetLeft;
         let y = _event.clientY - FireworkSimulation.crc2.canvas.offsetTop;
         let explosionPosition = new FireworkSimulation.Vector(x, y);
-        let explosion = explosions.push(explosion);
+        let explosion = new FireworkSimulation.Explosion(explosionPosition, Number(numCirclesInput.value), colorInput.value, Number(sizeInput.value), Number(lifetimeInput.value));
+        explosions.push(explosion);
     }
     // Hier werden alle explosions und ihre partikel neu gemalt
     function update() {

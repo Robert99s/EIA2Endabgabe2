@@ -13,7 +13,7 @@ namespace FireworkSimulation {
 
     //Funktion um die Daten aus dem Server auszulesen -> gibt Raketen zurück
     export async function handleLoad(): Promise<Rocket[]> {
-        let response: Response = await fetch("?command=find&collection=dataList");
+        let response: Response = await fetch(url + "?command=find&collection=dataList");
         let item: string = await response.text();
         // any, da der Server mehr als nur unsere gespeicherten Daten zurückgeben wird
         let serverData: any = JSON.parse(item);
@@ -32,7 +32,7 @@ namespace FireworkSimulation {
         query.set("collection", "dataList");
         query.set("data", JSON.stringify(_rocket));
         //Javascript Objekt zu einem JSON String umwandeln
-        let response: Response = await fetch("?" + query.toString());
+        let response: Response = await fetch(url + "?" + query.toString());
         //URL nehmen und Daten anhängen und abschicken
         let responseText: string = await response.text();
         //Fängt den response ab und macht ein text daraus

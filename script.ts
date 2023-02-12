@@ -32,7 +32,7 @@ namespace FireworkSimulation {
         let y: number = _event.clientY - crc2.canvas.offsetTop;
 
         let explosionPosition: Vector = new Vector(x, y);
-        let explosion: Explosion = //Position und Values übergeben
+        let explosion: Explosion = new Explosion(explosionPosition, Number(numCirclesInput.value), colorInput.value, Number(sizeInput.value), Number(lifetimeInput.value));
         explosions.push(explosion);
     }
 
@@ -50,4 +50,11 @@ namespace FireworkSimulation {
             }
         });
     }
+
+    //Nächster Schritt
+    /*
+    Funktion Rakete initialisieren
+    Click Event Rakete speichern
+
+    */
 }
